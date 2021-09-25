@@ -4,12 +4,17 @@
   box-sizing: border-box;
   font-family: 'Dancing Script', cursive;
 }
+
+img {
+  width: 100%;
+}
+.navbar-brand img {
+  width: 60px;
+  border-radius: 5px;
+}
+
 .cards a {
   text-decoration: none;
-}
-.navbar-brand {
-  border-top: 1px solid white !important;
-  border-bottom: 1px solid white !important;
 }
 header.row {
   background: url(image/banner3.jpg);
@@ -30,23 +35,17 @@ header p {
   font-size: 2.5rem;
 }
 nav {
-  padding: 5rem;
   font-size: 1.5rem;
   background: black;
+  -webkit-box-shadow: 0px 8px 8px -2px rgba(0, 0, 0, 0.51);
+  box-shadow: 0px 4px 4px -1px rgba(0, 0, 0, 0.51);
 }
-.nav-items {
-  display: flex;
-  justify-content: end;
-}
-
 .section2-cards {
   display: grid;
   place-items: center center center;
 }
 
 .section2 h1 {
-  /* height: 100vh; 
-  background: hsl(329, 100%, 5%, 1);  */
   text-align: center;
   font-weight: 900;
   margin-top: 15vh;
@@ -67,7 +66,7 @@ nav {
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
-img {
+.container-cards img {
   width: 100%;
   display: block;
   border-radius: 20px 20px 0 0;
@@ -148,6 +147,46 @@ img {
   border-radius: 0.25rem;
 }
 
+/*=========== Section 4 =================== */
+
+.card-personal2 {
+  display: flex !important;
+  gap: 1rem;
+}
+.carousel-item {
+  background: white !important;
+}
+/*========== section 5 ==================== */
+.empresa {
+  padding: 15vh 0;
+  font-size: 1.5rem;
+}
+
+footer {
+  color: rgb(233, 203, 233);
+  background: rgb(19, 19, 19);
+  text-align: center;
+}
+.social {
+  padding: 2rem 0;
+  background: rgb(29, 29, 29);
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+.social a {
+  text-decoration: none;
+  color: rgb(233, 203, 233);
+}
+.social a:hover {
+  color: rgb(201, 171, 201);
+}
+
+.copy {
+  padding: 0.5rem 0;
+}
+
 @media (max-width: 990px) {
   header.row {
     padding: 1rem;
@@ -176,5 +215,11 @@ img {
   }
   .order-md-last {
     order: 1;
+  }
+  .card-personal2 {
+    display: block !important;
+  }
+  .empresa {
+    font-size: 1rem;
   }
 }

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/style.css">
     <title>Critical Strike</title>
     <!--Font Google-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -39,7 +40,10 @@
           <div class="container">
             <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
               <div class="container">
-                <a class="navbar-brand" href="#">Critical Strike</a>
+                <a class="navbar-brand" href="#">
+                  
+                  <img src="image/logo2.png" alt="">
+                </a>
                 <button
                   class="navbar-toggler"
                   type="button"
@@ -52,17 +56,20 @@
                   <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse nav-items" id="navbarNav">
-                  <ul class="navbar-nav">
+                  <ul class="navbar-nav ms-md-auto">
                     <li class="nav-item">
                       <a class="nav-link active" aria-current="page" href="#"
                         >Home</a
                       >
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Produtos</a>
+                      <a class="nav-link" href="#anchor1">Produtos</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">A empresa</a>
+                      <a class="nav-link" href="#anchor2">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#empresa">A empresa</a>
                     </li>
                     <li class="nav-item">
                       <a
@@ -87,11 +94,11 @@
       <section class="container-fluid section2 mb-5">
         <div class="container">
           <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-12" id="anchor1">
               <h1>D&D Melhores Livros</h1>
               <div class="section2-cards">
                 <div class="cards">
-                 <a href="">
+                 <a href="" data-bs-toggle="modal" data-bs-target="#Modal0">
                   <div class="card-personal card1">
                     <div class="container-cards">
                       <img src="image/player-book2.jpg" alt="las vegas" />
@@ -106,7 +113,7 @@
                     </div>
                   </div>
                  </a> 
-                 <a href="">
+                 <a href="" data-bs-toggle="modal" data-bs-target="#Modal1">
                   <div class="card-personal card2">
                     <div class="container-cards">
                       <img src="image/master-book2.jpg" alt="New York" />
@@ -121,8 +128,8 @@
                     </div>
                   </div>
                  </a>
-                 <a href="">
-                  <div class="card-personal card3">
+                 <a href="" data-bs-toggle="modal" data-bs-target="#Modal2">
+                  <div class="card-personal card2">
                     <div class="container-cards">
                       <img src="image/Monster_Manual2.jpg" alt="Singapore" />
                     </div>
@@ -136,10 +143,10 @@
                     </div>
                   </div>
                  </a>
-                <a href="">
+                <a href="" data-bs-toggle="modal" data-bs-target="#Modal3">
                   <div class="card-personal card3">
                     <div class="container-cards">
-                      <img src="image/adventure-book.jpg" alt="Singapore" />
+                      <img src="image/adventure-book.jpg" />
                     </div>
                     <div class="details">
                       <h3>D&D Livro de Aventura</h3>
@@ -181,7 +188,7 @@
           </div>
         </div>
         <div class="container" id="tabuleiros">
-          <div class="row section3-content">
+          <div class="row section3-content pb-5">
             <div class="col-lg-6 mb-5 order-md-first"> 
               <div class="image2">
                 <img
@@ -202,7 +209,76 @@
           </div>
         </div>
       </section>
-     
+      <section class="container text-center empresa" id="empresa">
+        <h1>A Critical Strike</h1>
+        <p>
+          Mussum Ipsum, cacilds vidis litro abertis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Per aumento de cachacis, eu reclamis. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Viva Forevis aptent taciti sociosqu ad litora torquent.
+
+Diuretics paradis num copo é motivis de denguis. Paisis, filhis, espiritis santis. Atirei o pau no gatis, per gatis num morreus. Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo!
+
+Quem manda na minha terra sou euzis! In elementis mé pra quem é amistosis quis leo. Aenean aliquam molestie leo, vitae iaculis nisl. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus.
+
+
+        </p>
+        <p>
+          Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di mé, boa gentis num é. Cevadis im ampola pa arma uma pindureta. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. Viva Forevis aptent taciti sociosqu ad litora torquent.
+
+Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Si num tem leite então bota uma pinga aí cumpadi! Per aumento de cachacis, eu reclamis. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio.
+        </p>
+      </section>
+      <footer>
+        <div class="social" id="anchor2">
+        <a href=""><i class="icon-brand"></i></a>  
+        <a href=""><i class="icon-instagram"></i></a>  
+        <a href=""><i class="icon-brand1"></i></a>  
+        <a href=""><i class="icon-telephone"></i></a>  
+        <a href=""><i class="icon-envelope"></i></a>  
+        </div>
+        <div class="copy">&copy; Critical Strike 2021
+         
+        </div>
+      </footer>
+    </div>
+     <!-- Modal 0 -->
+     <div class="modal fade" id="Modal0" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <img src="image/player-book.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 1 -->
+    <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <img src="image/master-book.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+     <!-- Modal 2 -->
+     <div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <img src="image//Monster_Manual.jpg">
+          </div>
+        </div>
+      </div>
+      </div>
+    <!-- Modal 3 -->
+    <div class="modal fade" id="Modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <img src="image/adventure-book2.jpg">
+          </div>
+          
+        </div>
+      </div>
     </div>
   </body>
 </html>
