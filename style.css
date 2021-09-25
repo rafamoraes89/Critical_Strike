@@ -164,12 +164,12 @@ nav {
 
 footer {
   color: rgb(233, 203, 233);
-  background: rgb(19, 19, 19);
+  background: rgb(29, 29, 29);
   text-align: center;
 }
 .social {
-  padding: 2rem 0;
-  background: rgb(29, 29, 29);
+  padding-top: 0.5rem;
+  padding-bottom: 1.5rem;
   display: flex;
   justify-content: center;
   gap: 1rem;
@@ -185,6 +185,7 @@ footer {
 
 .copy {
   padding: 0.5rem 0;
+  background: rgb(19, 19, 19);
 }
 
 @media (max-width: 990px) {
